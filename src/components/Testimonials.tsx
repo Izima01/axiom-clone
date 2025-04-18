@@ -1,5 +1,5 @@
 import { Quote } from 'lucide-react';
-import { Navigation, Pagination } from 'swiper/modules';
+import { Autoplay, Pagination } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 const testistomialArray = [
@@ -38,9 +38,9 @@ const Testimonials = ({
       onMouseLeave={() => setIsOverSlider(false)}
     >
       <Swiper
-        modules={[Navigation, Pagination]}
+        modules={[Pagination, Autoplay]}
+        autoplay={{ delay: 3500 }}
         pagination={{ clickable: false }}
-        navigation
         speed={800}
         spaceBetween={20}
         loop={false}
@@ -56,7 +56,7 @@ const Testimonials = ({
               src={picture}
               alt=''
             />
-            <p className='text-center font-dmsans text-lg text-[#080337] md:text-2xl px-10 md:px-40'>
+            <p className='text-center font-dmsans text-lg text-[#080337] md:text-2xl px-6 md:px-10 lg:px-40'>
               {text}
             </p>
             <Quote
@@ -71,12 +71,6 @@ const Testimonials = ({
           </SwiperSlide>
         ))}
       </Swiper>
-      {/* <div className='swiper-button-prev'>
-        <ArrowLeft size={28} />
-      </div>
-      <div className='swiper-button-next'>
-        <ArrowRight size={28} />
-      </div> */}
     </section>
   );
 };

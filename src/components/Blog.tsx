@@ -67,9 +67,12 @@ const Blog = ({
         slidesPerGroup={1}
         breakpoints={{
           0: {
+            slidesPerView: 1,
+          },
+          640: {
             slidesPerView: 2,
           },
-          768: {
+          840: {
             slidesPerView: 3,
           },
           1024: {
@@ -79,7 +82,7 @@ const Blog = ({
       >
         {blogArray.map(({ category, comments, dateCreated, pic, title }) => (
           <SwiperSlide key={title} className='mb-12'>
-            <div className='h-52 w-full overflow-hidden'>
+            <div className='md:h-52 w-full overflow-hidden'>
               <img
                 src={pic}
                 className='rounded-2xl hover:scale-110 transition-[transform,scale] duration-300'

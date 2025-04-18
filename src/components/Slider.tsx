@@ -18,7 +18,7 @@ const Slider = ({
   return (
     <section
       // id='slider'
-      className='bg-[#E4EAF1] px-8 py-5 custom-cursor'
+      className='bg-[#E4EAF1] p-8 custom-cursor'
       onMouseEnter={() => setIsOverSlider(true)}
       onMouseLeave={() => setIsOverSlider(false)}
     >
@@ -32,13 +32,17 @@ const Slider = ({
         // spaceBetween={32}
         loop={true}
         slidesPerGroup={1}
-        className='w-full'
+        className='w-full !flex items-center'
         breakpoints={{
           0: {
+            slidesPerView: 1,
+            spaceBetween: 28,
+          },
+          640: {
             slidesPerView: 2.2,
             spaceBetween: 28,
           },
-          768: {
+          1024: {
             slidesPerView: 3,
             spaceBetween: 36,
           },
@@ -47,7 +51,7 @@ const Slider = ({
         {images.map((image, i) => (
           <SwiperSlide
             key={i}
-            className='!flex items-center justify-center !h-96 scale-y- !rounded-4xl overflow-hidden'
+            className=' !md:h-96 !rounded-4xl overflow-hidden'
           >
             <img decoding='async' src={image} alt='' className='!rounded-4xl' />
           </SwiperSlide>

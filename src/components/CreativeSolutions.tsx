@@ -2,10 +2,10 @@ const CreativeSolutions = () => {
   return (
     <section className='bg-[#E4EAF1] px-8 grid grid-cols-4 gap-6 pb-5 pt-18'>
       <div className='col-span-4 md:col-span-2 -mt-10'>
-        <h4 className='mb-2 uppercase tracking-[0.2em] font-bold text-[#080337] font-quicksand'>
+        <h4 className='mb-2 uppercase tracking-[0.2em] font-bold text-[#080337] text-sm md:text-base font-quicksand'>
           Creative Solutions
         </h4>
-        <h2 className='text-3xl md:text-4xl lg:text-6xl font-quicksand font-bold text-[#080337]'>
+        <h2 className='text-2xl md:text-3xl lg:text-4xl xl:text-6xl font-quicksand font-bold text-[#080337]'>
           We make unique & memorable brands
         </h2>
       </div>

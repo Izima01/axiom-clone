@@ -102,7 +102,7 @@ const Header = () => {
           onClick={() => setShowMenu(true)}
         />
       </div>
-      <button className='bg-[#4703ff] hover:bg-[#5300f1] rounded-full py-3 px-8 text-white font-bold font-quicksand cursor-pointer'>
+      <button className='hidden md:block bg-[#4703ff] hover:bg-[#5300f1] rounded-full py-3 px-8 text-white font-bold font-quicksand cursor-pointer'>
         Let's talk
       </button>
       <SearchModal showSearch={showSearch} setShowSearch={setShowSearch} />

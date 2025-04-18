@@ -1,19 +1,19 @@
 const WhoWeAre = () => {
   return (
-    <section className='bg-[#E4EAF1] px-8 flex flex-col md:flex-row-reverse gap-6 py-5 items-center'>
-      <div className='relative w-full h-[29rem] lg:h-[31rem] lg:flex-1/2'>
+    <section className='bg-[#E4EAF1] px-8 flex flex-col md:flex-row-reverse gap-7 py-5 items-center'>
+      <div className='relative w-full h-80 md:h-[29rem] lg:h-[31rem] lg:flex-1/2'>
         <img
           src='https://seo.axiomthemes.com/wp-content/uploads/2023/03/h32r.png'
           alt=''
           width={'65%'}
           // height={'85%'}
-          className='absolute right-0 top-0 md:top-10 lg:top-0 rounded-3xl h-5/6 md:h-3/5 lg:h-4/5'
+          className='absolute right-0 top-0 md:top-10 lg:top-0 rounded-3xl md:h-5/6 lg:h-3/5 xl:h-4/5'
         />
         <img
           src='https://seo.axiomthemes.com/wp-content/uploads/2023/03/h32l.png'
           alt=''
           width={'65%'}
-          className='absolute left-10 md:left-0 bottom-0 md:bottom-10 lg:bottom-0 rounded-3xl h-5/6 md:h-3/5 lg:h-4/5'
+          className='absolute left-10 md:left-0 bottom-0 md:bottom-10 lg:bottom-0 rounded-3xl md:h-5/6 lg:h-3/5 xl:h-4/5'
         />
       </div>
       <div className='mb-4 lg:flex-1/2'>

@@ -13,7 +13,7 @@ const Tracker = memo(
       <div
         className={`fixed ${
           isOverSlider ? 'hidden' : 'md:flex'
-        } rounded-full mix-blend-difference z-[9999] hidden w-3 h-3 bg-white justify-center`}
+        } rounded-full mix-blend-difference z-[9999] hidden w-3.5 h-3.5 bg-white justify-center`}
         style={{
           transform: `translate3d(${mousePosition.x - 25}px, ${
             mousePosition.y - 25

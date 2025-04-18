@@ -40,3 +40,8 @@
 .custom-cursor {
   cursor: url('./assets/slider.svg') 16 16, auto;
 }
+
+.swiper-button-prev,
+.swiper-button-next {
+  z-index: 100 !important;
+}

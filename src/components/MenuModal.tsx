@@ -59,7 +59,7 @@ const MenuModal = ({
             />
           </a>
           <button
-            className='flex items-center text-lg text-[#62656f]'
+            className='flex items-center  text-[#62656f]'
             onClick={() => {
               setShowMenu(false);
               setTimeout(() => {
@@ -76,22 +76,22 @@ const MenuModal = ({
           </button>
         </div>
         <nav className='pb-8 border-b border-b-gray-500'>
-          <ul className='flex flex-col gap-3'>
+          <ul className='flex flex-col gap-2.5 md:gap-3.5'>
             {mobileNavMenuArray.map(({ name, link, children }) => {
               if (link == '')
                 return (
                   <li>
                     <h3
                       key={name}
-                      className={`flex gap-7 ${
+                      className={`flex gap-5 md:gap-7 ${
                         openDropdown.child == name
                           ? 'text-white'
                           : 'text-[#979caa]'
-                      } text-2xl font font-semibold items-center w-fit duration-500 font-quicksand leading-1`}
+                      } text-lg md:text-2xl font-semibold items-center w-fit duration-500 font-quicksand leading-1`}
                       onClick={() => toggleDropDown(name, '')}
                     >
                       <span>{name}</span>
-                      <ArrowRight size={28} />
+                      <ArrowRight size={24} />
                     </h3>
                     <ul
                       className={`flex flex-col gap-2.5 overflow-hidden relative mt-1 transition-all duration-700 ${
@@ -105,7 +105,7 @@ const MenuModal = ({
                           child.children ? (
                             <li>
                               <h4
-                                className='flex gap-6 text-[#979caa] text-lg font-dmsans leading-1 items-center w-fit'
+                                className='flex gap-6 text-[#979caa]  font-dmsans leading-1 items-center w-fit'
                                 key={child.name}
                                 onClick={() => toggleDropDown(name, child.name)}
                               >
@@ -124,7 +124,7 @@ const MenuModal = ({
                                   child.children.map((child) => (
                                     <li>
                                       <a
-                                        className='flex gap-6 text-[#979caa] text-lg leading-4 items-center w-auto'
+                                        className='flex gap-6 text-[#979caa]  leading-4 items-center w-auto'
                                         href={child.link}
                                         key={child.name}
                                       >
@@ -136,7 +136,7 @@ const MenuModal = ({
                             </li>
                           ) : (
                             <a
-                              className='flex gap-6 text-[#979caa] text-lg font-dmsans leading-4 items-center w-fit pr-4'
+                              className='flex gap-6 text-[#979caa]  font-dmsans leading-4 items-center w-fit pr-4'
                               href={child.link}
                               key={child.name}
                             >
@@ -154,7 +154,7 @@ const MenuModal = ({
                       openDropdown.child == name
                         ? 'text-white'
                         : 'text-[#979caa]'
-                    } text-2xl font-quicksand`}
+                    } text-lg md:text-2xl font-quicksand`}
                     key={name}
                   >
                     <a href={link}>{name}</a>

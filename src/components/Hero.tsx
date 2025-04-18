@@ -1,13 +1,13 @@
 const Hero = () => {
   return (
-    <section className="bg-[url('https://seo.axiomthemes.com/wp-content/uploads/2023/03/h3mbbg.png')] bg-cover bg-no-repeat md:h-screen relative">
-      <div className='flex flex-col gap-8 mx-auto items-center pt-28 md:pt-36 pb-18 w-4/5 md:w-2/3'>
+    <section className="bg-[url('https://seo.axiomthemes.com/wp-content/uploads/2023/03/h3mbbg.png')] bg-cover bg-no-repeat flex justify-center items-center h-screen relative">
+      <div className='flex flex-col gap-5 md:gap-8 mx-auto items-center w-4/5 md:w-2/3'>
         <h1 className='text-4xl md:text-[3.4rem] font-bold text-white text-center font-quicksand'>
           Turning Creative Ideas into Success
         </h1>
-        <p className='text-center text-white font-medium font-dmsans md:text-lg'>
-          Consectetur adipisicing elit. Necessitatibus aut inventore possimus
-          amet soluta temporibus commodi placeat
+        <p className='text-center text-white font-medium font-dmsans md:text-lg px-7 md:px-0'>
+          Consectetur adipiscing elit, sed do eiusmod tempor incididunt dolore
+          magna aliqua quis nostrud exerc.
         </p>
         <button className='bg-[#05bed6] rounded-full py-3 px-8 w-fit text-white font-medium font-quicksand'>
           Discover Now
